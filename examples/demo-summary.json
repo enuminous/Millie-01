@@ -1,0 +1,76 @@
+{
+  "status": "SIMULATED_ONLY",
+  "steps_per_scenario": 100,
+  "cases": [
+    {
+      "scenario": "clear",
+      "final_x_m": 0.4,
+      "first_stop_s": null,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "obstacle",
+      "final_x_m": 0.012,
+      "first_stop_s": 0.15,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "estop",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "bumper",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "range_dropout",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "low_battery",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "heartbeat_loss",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "expired_command",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "traction_loss",
+      "final_x_m": 0.13,
+      "first_stop_s": null,
+      "efmw_alert_ticks": 72,
+      "test_status": "SIMULATED_ONLY"
+    },
+    {
+      "scenario": "tilt",
+      "final_x_m": 0.04,
+      "first_stop_s": 0.5,
+      "efmw_alert_ticks": 0,
+      "test_status": "SIMULATED_ONLY"
+    }
+  ]
+}

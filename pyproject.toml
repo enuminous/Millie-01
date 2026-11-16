@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "millie-01"
+version = "0.1.0"
+description = "Simulation-first, evidence-bounded mobile robot reference architecture"
+requires-python = ">=3.10"
+authors = [{name = "Monolithic LLC / Matthew Chenoweth Wright"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+millie-01 = "millie01.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["millie01*"]

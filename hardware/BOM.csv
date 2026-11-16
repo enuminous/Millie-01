@@ -1,0 +1,14 @@
+item_id,subsystem,example_part,quantity,unit_estimate_low_usd,unit_estimate_high_usd,price_status,reference,notes
+B01,compute,Raspberry Pi 5 4GB,1,100,130,manufacturer_list_110_usd_nov2026,https://www.raspberrypi.com/products/raspberry-pi-5/,5V/5A supply separate; may substitute smaller board after profiling
+B02,compute,Official-class 5V/5A USB-C PSU plus SD and cooling,1,25,45,planning_only,,Confirm compatible certified power system
+B03,MCU,Raspberry Pi Pico 2 with headers,1,5,9,retailer_observed_5.99_usd,https://www.raspberrypi.com/products/raspberry-pi-pico-2/,Motor firmware not released/enabled
+B04,motors,Pololu 150:1 LP 6V with 12CPR encoder item5114,2,29.95,35,manufacturer_29.95_usd_single,https://www.pololu.com/product/5114/specs,0.36A extrapolated stall current; verify load margin
+B05,driver,Pololu TB6612FNG dual H-bridge carrier item713,1,4.95,9,manufacturer_4.95_usd_single,https://www.pololu.com/product/713,1A continuous/channel 3A peak; verify wiring and cooling
+B06,rolling,chassis plate caster mounts 2 wheels,1,25,65,planning_only,,Lightweight chassis; wheels fit 3mm D shaft
+B07,range,VL53L1X ToF front sensor carrier,1,15,30,planning_only,https://www.pololu.com/category/306,Front only; no full obstacle coverage
+B08,contact,Normally-closed bump switches and brackets,2,3,9,planning_only,,Front bumper sensing only
+B09,motion,3-axis IMU module,1,8,20,planning_only,,Verify 3.3V I2C interface
+B10,power,Approved regulated 6V low-current motor bench supply,1,15,30,planning_only,,Initial elevated-wheel tests only
+B11,safety,Physical latch E-stop plus rated relay/contactor/disconnect assembly,1,20,65,planning_only,,Qualified review required; physically cuts VMOT
+B12,safety,Fuse holder fuses master switch wiring strain relief keyed connectors,1,20,50,planning_only,,Rate to actual supply and wiring; no breadboard motor rail
+B13,assembly,Mounting hardware and protective enclosure,1,10,30,planning_only,,Ventilation and physical guard clearance
