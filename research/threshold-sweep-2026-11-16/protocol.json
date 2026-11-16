@@ -1,0 +1,29 @@
+{
+  "study": "MILLIE-THRESHOLD-001",
+  "status": "Exploratory sensitivity analysis after observing the default run; not a preregistration or independent validation",
+  "source_commit": "bc35015e90a466812c07742d0ad4558e1e4259d6",
+  "repository": "https://github.com/enuminous/Millie-01",
+  "date": "2026-11-16",
+  "steps": 80,
+  "dt_s": 0.05,
+  "fault_injection_s": 0.5,
+  "ranked_scenario": "traction_loss",
+  "other_scenarios": ["clear", "obstacle", "estop", "bumper", "range_dropout", "low_battery", "heartbeat_loss", "expired_command", "tilt"],
+  "threshold_grid": {
+    "multiplier_formula": "2 ** (k / 4)",
+    "k_min": -16,
+    "k_max": 20,
+    "levels_per_monitor": 37,
+    "minimum_multiplier": 0.0625,
+    "maximum_multiplier": 32.0,
+    "combinations": 50653,
+    "base_thresholds": {"S": 0.023, "A": 0.03, "C": 0.12}
+  },
+  "monitor_names": {"S": "Signed EWMA (EFMW label)", "A": "Absolute EWMA", "C": "Two-sided CUSUM"},
+  "fixed_parameters": {"signed_decay": 0.97, "absolute_decay": 0.90, "cusum_k": 0.005, "consecutive_samples": 3},
+  "ranking": "First confirmed post-injection alert; earlier is better. Equal timestamps remain ties. No alert through t=3.95 s is right-censored and never assigned a fictional detection time. Pre-injection alerts are recorded separately.",
+  "flips": "Report every adjacent grid edge where the finite winner set changes, every adjacent edge where the complete ranking/censoring changes, and exact score-derived pairwise threshold frontiers.",
+  "controls": "Retain all nine other built-in scenarios. These noiseless traces cannot calibrate false-alarm rates.",
+  "verification": "Compare every single-monitor threshold at all ten scenarios with direct execution of the production simulator; additionally check combined grid corners and defaults, closed-form step-response scores, censoring, ties, and all adjacent ranking edges.",
+  "interpretation": "Cell counts depend on the chosen grid and are not win probabilities or evidence of a generally superior detector. No recommended tuning, physical validation, or EFMW uniqueness claim follows."
+}

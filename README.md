@@ -93,3 +93,8 @@ The software test suite has been run locally. This is not a substitute for hardw
 - [The Abstention Trap, retrospective benchmark critique](https://github.com/enuminous/papers/blob/main/research/rsi-abstention-trap/PAPER.md)
 
 **License:** MIT software/source. Electrical and mechanical drawings are preliminary engineering notes, not licensed/certified hardware designs. No transfer of ChatGPT identity, weights, or autonomy is implied.
+
+
+## Published threshold sensitivity study
+
+The [50,653-cell threshold ranking and flip atlas](research/threshold-sweep-2026-11-16/README.md) includes a self-contained explorer, complete ranking data, exact pairwise boundaries and reproduction scripts. All six strict orders occur under independent threshold changes; common scaling keeps CUSUM first or tied on the tested trace. These are uncalibrated sensitivity results, not a matched-false-alarm benchmark.

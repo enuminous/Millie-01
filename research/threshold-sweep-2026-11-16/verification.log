@@ -1,0 +1,34 @@
+test_frontier_applies_to_nonmonotonic_scores (test_sweep.ThresholdSemantics.test_frontier_applies_to_nonmonotonic_scores) ... ok
+test_nonconsecutive_crossings_reset_confirmation (test_sweep.ThresholdSemantics.test_nonconsecutive_crossings_reset_confirmation) ... ok
+test_strict_equality_does_not_trigger (test_sweep.ThresholdSemantics.test_strict_equality_does_not_trigger) ... ok
+test_ties_and_misses_remain_distinct (test_sweep.ThresholdSemantics.test_ties_and_misses_remain_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+test_arm_with_human_and_bounded_motion (test_safety.SafetyTests.test_arm_with_human_and_bounded_motion) ... ok
+test_coherence_cannot_override_safety (test_safety.SafetyTests.test_coherence_cannot_override_safety) ... ok
+test_e_stop_latched_even_if_unarmed (test_safety.SafetyTests.test_e_stop_latched_even_if_unarmed) ... ok
+test_estop_latches_and_needs_two_human_actions (test_safety.SafetyTests.test_estop_latches_and_needs_two_human_actions) ... ok
+test_faults_latch (test_safety.SafetyTests.test_faults_latch) ... ok
+test_near_obstacle_fails_stop (test_safety.SafetyTests.test_near_obstacle_fails_stop) ... ok
+test_no_reverse_without_rear_sensor (test_safety.SafetyTests.test_no_reverse_without_rear_sensor) ... ok
+test_no_unauthorized_motion (test_safety.SafetyTests.test_no_unauthorized_motion) ... ok
+test_nonfinite_cmd_rejected (test_safety.SafetyTests.test_nonfinite_cmd_rejected) ... ok
+test_stale_and_future_commands_fail_stop (test_safety.SafetyTests.test_stale_and_future_commands_fail_stop) ... ok
+test_stays_disarmed_without_human (test_safety.SafetyTests.test_stays_disarmed_without_human) ... ok
+test_clear_moves (test_sim.SimTests.test_clear_moves) ... ok
+test_coherence_is_standard_ewma_formula (test_sim.SimTests.test_coherence_is_standard_ewma_formula) ... ok
+test_estop_keeps_stationary_after_fault (test_sim.SimTests.test_estop_keeps_stationary_after_fault) ... ok
+test_expired_command (test_sim.SimTests.test_expired_command) ... ok
+test_fault_cases_stop_after_injection (test_sim.SimTests.test_fault_cases_stop_after_injection) ... ok
+test_obstacle_stops_before_collision (test_sim.SimTests.test_obstacle_stops_before_collision) ... ok
+test_reproducible (test_sim.SimTests.test_reproducible) ... ok
+test_traction_fault_increases_signed_discrepancy (test_sim.SimTests.test_traction_fault_increases_signed_discrepancy) ... ok
+test_unknown_scenario (test_sim.SimTests.test_unknown_scenario) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.009s
+
+OK

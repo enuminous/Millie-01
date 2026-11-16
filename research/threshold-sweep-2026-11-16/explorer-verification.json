@@ -1,0 +1,12 @@
+{
+  "javascript_grid_cells_match_python_csv": 50653,
+  "preset_handlers_passed": [
+    "defaults",
+    "signedWin",
+    "absoluteWin",
+    "miss"
+  ],
+  "javascript_runtime": "Node.js VM with DOM/canvas stubs",
+  "browser_rendering_verified": false,
+  "browser_limitation": "Bundled browser absent; system Chromium launch blocked by environment socket permissions. No browser or mobile-layout pass is claimed."
+}
