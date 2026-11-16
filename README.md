@@ -68,6 +68,7 @@ The physical E-stop must interrupt the **motor supply** through an appropriately
 |---|---|
 | `millie01/` | Offline controller, state machine, physics-lite rover, diagnostic monitors, CLI |
 | `tests/` | Unit and scenario safety tests; not physical safety certification |
+| `docs/TEST_REPORT.md` | Local test results, scenario matrix, and unresolved hardware obligations |
 | `hardware/ARCHITECTURE.md` | Sensor/controller/motor power partition; wiring boundaries |
 | `hardware/BOM.csv` | Provisional parts, budget ranges and supplier references |
 | `hardware/BOM.md` | Procurement caution and verified component constraints |
