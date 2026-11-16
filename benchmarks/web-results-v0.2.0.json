@@ -1,0 +1,7939 @@
+{
+  "version": "0.2.0",
+  "monitor": {
+    "schema": "millie01.monitor.benchmark.v1",
+    "version": "0.2.0",
+    "status": "EXPLORATORY_SYNTHETIC_NOT_INDEPENDENT",
+    "protocol": {
+      "id": "M01-WEB-001",
+      "version": 1,
+      "steps": 400,
+      "onset": 160,
+      "dt": 0.05,
+      "sigma": 0.025,
+      "calibrationRuns": 100,
+      "calibrationSeed": 10000,
+      "evaluationSeed": 30000,
+      "targetRunFalseAlarm": 0.05,
+      "consecutive": 3,
+      "drift": 0.07,
+      "varianceSigma": 0.14,
+      "oscillation": 0.12
+    },
+    "runsPerFamily": 100,
+    "thresholds": {
+      "signed": 0.008898090495697397,
+      "absolute": 0.03147015378837168,
+      "cusum": 0.3333567618949121
+    },
+    "matchedSignedIdentical": true,
+    "summary": [
+      {
+        "family": "null",
+        "monitor": "EFMW-style signed",
+        "n": 100,
+        "falseAlarms": 8,
+        "detections": null,
+        "misses": null,
+        "medianDelay": null,
+        "penalizedDelay": null
+      },
+      {
+        "family": "null",
+        "monitor": "Absolute EWMA",
+        "n": 100,
+        "falseAlarms": 4,
+        "detections": null,
+        "misses": null,
+        "medianDelay": null,
+        "penalizedDelay": null
+      },
+      {
+        "family": "null",
+        "monitor": "Two-sided CUSUM",
+        "n": 100,
+        "falseAlarms": 11,
+        "detections": null,
+        "misses": null,
+        "medianDelay": null,
+        "penalizedDelay": null
+      },
+      {
+        "family": "positive",
+        "monitor": "EFMW-style signed",
+        "n": 100,
+        "falseAlarms": 3,
+        "detections": 97,
+        "misses": 3,
+        "medianDelay": 0.30000000000000004,
+        "penalizedDelay": 0.6505000000000001
+      },
+      {
+        "family": "positive",
+        "monitor": "Absolute EWMA",
+        "n": 100,
+        "falseAlarms": 1,
+        "detections": 99,
+        "misses": 1,
+        "medianDelay": 0.2,
+        "penalizedDelay": 0.3154999999999999
+      },
+      {
+        "family": "positive",
+        "monitor": "Two-sided CUSUM",
+        "n": 100,
+        "falseAlarms": 3,
+        "detections": 97,
+        "misses": 3,
+        "medianDelay": 0.30000000000000004,
+        "penalizedDelay": 0.6470000000000001
+      },
+      {
+        "family": "negative",
+        "monitor": "EFMW-style signed",
+        "n": 100,
+        "falseAlarms": 3,
+        "detections": 97,
+        "misses": 3,
+        "medianDelay": 0.30000000000000004,
+        "penalizedDelay": 0.6585000000000001
+      },
+      {
+        "family": "negative",
+        "monitor": "Absolute EWMA",
+        "n": 100,
+        "falseAlarms": 0,
+        "detections": 100,
+        "misses": 0,
+        "medianDelay": 0.2,
+        "penalizedDelay": 0.20749999999999993
+      },
+      {
+        "family": "negative",
+        "monitor": "Two-sided CUSUM",
+        "n": 100,
+        "falseAlarms": 2,
+        "detections": 98,
+        "misses": 2,
+        "medianDelay": 0.30000000000000004,
+        "penalizedDelay": 0.5350000000000001
+      },
+      {
+        "family": "variance",
+        "monitor": "EFMW-style signed",
+        "n": 100,
+        "falseAlarms": 4,
+        "detections": 96,
+        "misses": 4,
+        "medianDelay": 0.5,
+        "penalizedDelay": 1.2245000000000001
+      },
+      {
+        "family": "variance",
+        "monitor": "Absolute EWMA",
+        "n": 100,
+        "falseAlarms": 0,
+        "detections": 100,
+        "misses": 0,
+        "medianDelay": 0.15000000000000002,
+        "penalizedDelay": 0.16249999999999998
+      },
+      {
+        "family": "variance",
+        "monitor": "Two-sided CUSUM",
+        "n": 100,
+        "falseAlarms": 6,
+        "detections": 94,
+        "misses": 6,
+        "medianDelay": 0.45,
+        "penalizedDelay": 1.1925
+      },
+      {
+        "family": "oscillation",
+        "monitor": "EFMW-style signed",
+        "n": 100,
+        "falseAlarms": 2,
+        "detections": 5,
+        "misses": 95,
+        "medianDelay": 7.65,
+        "penalizedDelay": 11.746500000000001
+      },
+      {
+        "family": "oscillation",
+        "monitor": "Absolute EWMA",
+        "n": 100,
+        "falseAlarms": 3,
+        "detections": 97,
+        "misses": 3,
+        "medianDelay": 0.25,
+        "penalizedDelay": 0.5925
+      },
+      {
+        "family": "oscillation",
+        "monitor": "Two-sided CUSUM",
+        "n": 100,
+        "falseAlarms": 2,
+        "detections": 10,
+        "misses": 90,
+        "medianDelay": 6,
+        "penalizedDelay": 11.3465
+      }
+    ],
+    "rows": [
+      {
+        "seed": 30000,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30001,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30002,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30003,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30004,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30005,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30006,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30007,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30008,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30009,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30010,
+        "family": "null",
+        "first": [
+          389,
+          null,
+          390
+        ],
+        "post": [
+          389,
+          null,
+          390
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30011,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          284
+        ],
+        "post": [
+          null,
+          null,
+          284
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30012,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30013,
+        "family": "null",
+        "first": [
+          211,
+          null,
+          217
+        ],
+        "post": [
+          211,
+          null,
+          217
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30014,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30015,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30016,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30017,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30018,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30019,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30020,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30021,
+        "family": "null",
+        "first": [
+          288,
+          null,
+          338
+        ],
+        "post": [
+          288,
+          null,
+          338
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30022,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30023,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30024,
+        "family": "null",
+        "first": [
+          null,
+          188,
+          155
+        ],
+        "post": [
+          null,
+          188,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30025,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30026,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30027,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30028,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30029,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30030,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30031,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30032,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30033,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30034,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30035,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30036,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30037,
+        "family": "null",
+        "first": [
+          68,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30038,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30039,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30040,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30041,
+        "family": "null",
+        "first": [
+          null,
+          301,
+          null
+        ],
+        "post": [
+          null,
+          301,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30042,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30043,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30044,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30045,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30046,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30047,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30048,
+        "family": "null",
+        "first": [
+          192,
+          null,
+          194
+        ],
+        "post": [
+          192,
+          null,
+          194
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30049,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30050,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30051,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30052,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30053,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30054,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30055,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30056,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30057,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30058,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30059,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          308
+        ],
+        "post": [
+          null,
+          null,
+          308
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30060,
+        "family": "null",
+        "first": [
+          327,
+          null,
+          339
+        ],
+        "post": [
+          327,
+          null,
+          339
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30061,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30062,
+        "family": "null",
+        "first": [
+          44,
+          60,
+          45
+        ],
+        "post": [
+          221,
+          null,
+          219
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30063,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30064,
+        "family": "null",
+        "first": [
+          200,
+          null,
+          209
+        ],
+        "post": [
+          200,
+          null,
+          209
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30065,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30066,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30067,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30068,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30069,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30070,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30071,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30072,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30073,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30074,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30075,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30076,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30077,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30078,
+        "family": "null",
+        "first": [
+          null,
+          114,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30079,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30080,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30081,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30082,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          307
+        ],
+        "post": [
+          null,
+          null,
+          307
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30083,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30084,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30085,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30086,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30087,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30088,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30089,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30090,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30091,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30092,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30093,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30094,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30095,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30096,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30097,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30098,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 30099,
+        "family": "null",
+        "first": [
+          null,
+          null,
+          null
+        ],
+        "post": [
+          null,
+          null,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31000,
+        "family": "positive",
+        "first": [
+          167,
+          163,
+          165
+        ],
+        "post": [
+          167,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31001,
+        "family": "positive",
+        "first": [
+          171,
+          163,
+          168
+        ],
+        "post": [
+          171,
+          163,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31002,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31003,
+        "family": "positive",
+        "first": [
+          164,
+          163,
+          165
+        ],
+        "post": [
+          164,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31004,
+        "family": "positive",
+        "first": [
+          164,
+          163,
+          166
+        ],
+        "post": [
+          164,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31005,
+        "family": "positive",
+        "first": [
+          163,
+          164,
+          164
+        ],
+        "post": [
+          163,
+          164,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31006,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31007,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31008,
+        "family": "positive",
+        "first": [
+          166,
+          166,
+          168
+        ],
+        "post": [
+          166,
+          166,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31009,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31010,
+        "family": "positive",
+        "first": [
+          165,
+          165,
+          166
+        ],
+        "post": [
+          165,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31011,
+        "family": "positive",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31012,
+        "family": "positive",
+        "first": [
+          166,
+          165,
+          166
+        ],
+        "post": [
+          166,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31013,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31014,
+        "family": "positive",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31015,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31016,
+        "family": "positive",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31017,
+        "family": "positive",
+        "first": [
+          165,
+          165,
+          166
+        ],
+        "post": [
+          165,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31018,
+        "family": "positive",
+        "first": [
+          164,
+          164,
+          166
+        ],
+        "post": [
+          164,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31019,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31020,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          167
+        ],
+        "post": [
+          166,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31021,
+        "family": "positive",
+        "first": [
+          169,
+          166,
+          149
+        ],
+        "post": [
+          169,
+          166,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31022,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31023,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31024,
+        "family": "positive",
+        "first": [
+          168,
+          163,
+          166
+        ],
+        "post": [
+          168,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31025,
+        "family": "positive",
+        "first": [
+          164,
+          164,
+          167
+        ],
+        "post": [
+          164,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31026,
+        "family": "positive",
+        "first": [
+          166,
+          166,
+          166
+        ],
+        "post": [
+          166,
+          166,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31027,
+        "family": "positive",
+        "first": [
+          167,
+          163,
+          165
+        ],
+        "post": [
+          167,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31028,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31029,
+        "family": "positive",
+        "first": [
+          166,
+          166,
+          167
+        ],
+        "post": [
+          166,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31030,
+        "family": "positive",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31031,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31032,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          165
+        ],
+        "post": [
+          166,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31033,
+        "family": "positive",
+        "first": [
+          123,
+          163,
+          121
+        ],
+        "post": [
+          165,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31034,
+        "family": "positive",
+        "first": [
+          168,
+          165,
+          167
+        ],
+        "post": [
+          168,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31035,
+        "family": "positive",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31036,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          164
+        ],
+        "post": [
+          165,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31037,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31038,
+        "family": "positive",
+        "first": [
+          124,
+          162,
+          166
+        ],
+        "post": [
+          168,
+          162,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31039,
+        "family": "positive",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31040,
+        "family": "positive",
+        "first": [
+          169,
+          163,
+          166
+        ],
+        "post": [
+          169,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31041,
+        "family": "positive",
+        "first": [
+          167,
+          163,
+          167
+        ],
+        "post": [
+          167,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31042,
+        "family": "positive",
+        "first": [
+          168,
+          164,
+          168
+        ],
+        "post": [
+          168,
+          164,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31043,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31044,
+        "family": "positive",
+        "first": [
+          165,
+          165,
+          165
+        ],
+        "post": [
+          165,
+          165,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31045,
+        "family": "positive",
+        "first": [
+          166,
+          100,
+          167
+        ],
+        "post": [
+          166,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31046,
+        "family": "positive",
+        "first": [
+          164,
+          164,
+          165
+        ],
+        "post": [
+          164,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31047,
+        "family": "positive",
+        "first": [
+          168,
+          164,
+          166
+        ],
+        "post": [
+          168,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31048,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31049,
+        "family": "positive",
+        "first": [
+          162,
+          163,
+          162
+        ],
+        "post": [
+          162,
+          163,
+          162
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31050,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31051,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          166
+        ],
+        "post": [
+          165,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31052,
+        "family": "positive",
+        "first": [
+          169,
+          162,
+          166
+        ],
+        "post": [
+          169,
+          162,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31053,
+        "family": "positive",
+        "first": [
+          167,
+          165,
+          166
+        ],
+        "post": [
+          167,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31054,
+        "family": "positive",
+        "first": [
+          163,
+          163,
+          163
+        ],
+        "post": [
+          163,
+          163,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31055,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31056,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31057,
+        "family": "positive",
+        "first": [
+          166,
+          165,
+          167
+        ],
+        "post": [
+          166,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31058,
+        "family": "positive",
+        "first": [
+          166,
+          163,
+          165
+        ],
+        "post": [
+          166,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31059,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31060,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31061,
+        "family": "positive",
+        "first": [
+          166,
+          165,
+          167
+        ],
+        "post": [
+          166,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31062,
+        "family": "positive",
+        "first": [
+          166,
+          165,
+          166
+        ],
+        "post": [
+          166,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31063,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          166
+        ],
+        "post": [
+          165,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31064,
+        "family": "positive",
+        "first": [
+          168,
+          165,
+          166
+        ],
+        "post": [
+          168,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31065,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31066,
+        "family": "positive",
+        "first": [
+          168,
+          167,
+          168
+        ],
+        "post": [
+          168,
+          167,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31067,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31068,
+        "family": "positive",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31069,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31070,
+        "family": "positive",
+        "first": [
+          164,
+          163,
+          164
+        ],
+        "post": [
+          164,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31071,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31072,
+        "family": "positive",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31073,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31074,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31075,
+        "family": "positive",
+        "first": [
+          166,
+          164,
+          167
+        ],
+        "post": [
+          166,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31076,
+        "family": "positive",
+        "first": [
+          167,
+          165,
+          167
+        ],
+        "post": [
+          167,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31077,
+        "family": "positive",
+        "first": [
+          163,
+          163,
+          75
+        ],
+        "post": [
+          163,
+          163,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31078,
+        "family": "positive",
+        "first": [
+          167,
+          166,
+          167
+        ],
+        "post": [
+          167,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31079,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31080,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31081,
+        "family": "positive",
+        "first": [
+          170,
+          164,
+          168
+        ],
+        "post": [
+          170,
+          164,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31082,
+        "family": "positive",
+        "first": [
+          166,
+          163,
+          167
+        ],
+        "post": [
+          166,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31083,
+        "family": "positive",
+        "first": [
+          166,
+          165,
+          167
+        ],
+        "post": [
+          166,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31084,
+        "family": "positive",
+        "first": [
+          168,
+          162,
+          166
+        ],
+        "post": [
+          168,
+          162,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31085,
+        "family": "positive",
+        "first": [
+          164,
+          165,
+          164
+        ],
+        "post": [
+          164,
+          165,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31086,
+        "family": "positive",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31087,
+        "family": "positive",
+        "first": [
+          165,
+          162,
+          164
+        ],
+        "post": [
+          165,
+          162,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31088,
+        "family": "positive",
+        "first": [
+          114,
+          165,
+          164
+        ],
+        "post": [
+          164,
+          165,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31089,
+        "family": "positive",
+        "first": [
+          167,
+          163,
+          166
+        ],
+        "post": [
+          167,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31090,
+        "family": "positive",
+        "first": [
+          166,
+          166,
+          166
+        ],
+        "post": [
+          166,
+          166,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31091,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31092,
+        "family": "positive",
+        "first": [
+          164,
+          163,
+          165
+        ],
+        "post": [
+          164,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31093,
+        "family": "positive",
+        "first": [
+          168,
+          164,
+          166
+        ],
+        "post": [
+          168,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31094,
+        "family": "positive",
+        "first": [
+          168,
+          165,
+          168
+        ],
+        "post": [
+          168,
+          165,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31095,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31096,
+        "family": "positive",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31097,
+        "family": "positive",
+        "first": [
+          167,
+          166,
+          167
+        ],
+        "post": [
+          167,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31098,
+        "family": "positive",
+        "first": [
+          170,
+          164,
+          168
+        ],
+        "post": [
+          170,
+          164,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 31099,
+        "family": "positive",
+        "first": [
+          166,
+          163,
+          167
+        ],
+        "post": [
+          166,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32000,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32001,
+        "family": "negative",
+        "first": [
+          163,
+          163,
+          164
+        ],
+        "post": [
+          163,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32002,
+        "family": "negative",
+        "first": [
+          169,
+          167,
+          169
+        ],
+        "post": [
+          169,
+          167,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32003,
+        "family": "negative",
+        "first": [
+          170,
+          163,
+          167
+        ],
+        "post": [
+          170,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32004,
+        "family": "negative",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32005,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          167
+        ],
+        "post": [
+          167,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32006,
+        "family": "negative",
+        "first": [
+          166,
+          166,
+          167
+        ],
+        "post": [
+          166,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32007,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32008,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32009,
+        "family": "negative",
+        "first": [
+          168,
+          167,
+          168
+        ],
+        "post": [
+          168,
+          167,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32010,
+        "family": "negative",
+        "first": [
+          168,
+          163,
+          167
+        ],
+        "post": [
+          168,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32011,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32012,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          166
+        ],
+        "post": [
+          167,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32013,
+        "family": "negative",
+        "first": [
+          164,
+          162,
+          164
+        ],
+        "post": [
+          164,
+          162,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32014,
+        "family": "negative",
+        "first": [
+          166,
+          166,
+          168
+        ],
+        "post": [
+          166,
+          166,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32015,
+        "family": "negative",
+        "first": [
+          164,
+          164,
+          165
+        ],
+        "post": [
+          164,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32016,
+        "family": "negative",
+        "first": [
+          164,
+          165,
+          165
+        ],
+        "post": [
+          164,
+          165,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32017,
+        "family": "negative",
+        "first": [
+          163,
+          163,
+          165
+        ],
+        "post": [
+          163,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32018,
+        "family": "negative",
+        "first": [
+          135,
+          164,
+          135
+        ],
+        "post": [
+          169,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32019,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32020,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          167
+        ],
+        "post": [
+          166,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32021,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32022,
+        "family": "negative",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32023,
+        "family": "negative",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32024,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32025,
+        "family": "negative",
+        "first": [
+          166,
+          165,
+          165
+        ],
+        "post": [
+          166,
+          165,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32026,
+        "family": "negative",
+        "first": [
+          128,
+          164,
+          164
+        ],
+        "post": [
+          166,
+          164,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32027,
+        "family": "negative",
+        "first": [
+          167,
+          163,
+          166
+        ],
+        "post": [
+          167,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32028,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          167
+        ],
+        "post": [
+          167,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32029,
+        "family": "negative",
+        "first": [
+          169,
+          167,
+          168
+        ],
+        "post": [
+          169,
+          167,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32030,
+        "family": "negative",
+        "first": [
+          166,
+          166,
+          166
+        ],
+        "post": [
+          166,
+          166,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32031,
+        "family": "negative",
+        "first": [
+          168,
+          164,
+          166
+        ],
+        "post": [
+          168,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32032,
+        "family": "negative",
+        "first": [
+          169,
+          162,
+          166
+        ],
+        "post": [
+          169,
+          162,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32033,
+        "family": "negative",
+        "first": [
+          162,
+          163,
+          164
+        ],
+        "post": [
+          162,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32034,
+        "family": "negative",
+        "first": [
+          168,
+          165,
+          167
+        ],
+        "post": [
+          168,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32035,
+        "family": "negative",
+        "first": [
+          164,
+          163,
+          165
+        ],
+        "post": [
+          164,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32036,
+        "family": "negative",
+        "first": [
+          30,
+          164,
+          29
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32037,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32038,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          165
+        ],
+        "post": [
+          166,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32039,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          167
+        ],
+        "post": [
+          167,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32040,
+        "family": "negative",
+        "first": [
+          163,
+          165,
+          165
+        ],
+        "post": [
+          163,
+          165,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32041,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          166
+        ],
+        "post": [
+          165,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32042,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          167
+        ],
+        "post": [
+          166,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32043,
+        "family": "negative",
+        "first": [
+          167,
+          163,
+          165
+        ],
+        "post": [
+          167,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32044,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32045,
+        "family": "negative",
+        "first": [
+          164,
+          162,
+          165
+        ],
+        "post": [
+          164,
+          162,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32046,
+        "family": "negative",
+        "first": [
+          164,
+          162,
+          165
+        ],
+        "post": [
+          164,
+          162,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32047,
+        "family": "negative",
+        "first": [
+          169,
+          163,
+          166
+        ],
+        "post": [
+          169,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32048,
+        "family": "negative",
+        "first": [
+          163,
+          164,
+          164
+        ],
+        "post": [
+          163,
+          164,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32049,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          165
+        ],
+        "post": [
+          166,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32050,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          166
+        ],
+        "post": [
+          167,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32051,
+        "family": "negative",
+        "first": [
+          165,
+          162,
+          163
+        ],
+        "post": [
+          165,
+          162,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32052,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32053,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32054,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32055,
+        "family": "negative",
+        "first": [
+          166,
+          165,
+          166
+        ],
+        "post": [
+          166,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32056,
+        "family": "negative",
+        "first": [
+          167,
+          162,
+          167
+        ],
+        "post": [
+          167,
+          162,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32057,
+        "family": "negative",
+        "first": [
+          168,
+          168,
+          169
+        ],
+        "post": [
+          168,
+          168,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32058,
+        "family": "negative",
+        "first": [
+          166,
+          165,
+          165
+        ],
+        "post": [
+          166,
+          165,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32059,
+        "family": "negative",
+        "first": [
+          166,
+          166,
+          167
+        ],
+        "post": [
+          166,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32060,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32061,
+        "family": "negative",
+        "first": [
+          168,
+          167,
+          168
+        ],
+        "post": [
+          168,
+          167,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32062,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32063,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32064,
+        "family": "negative",
+        "first": [
+          165,
+          165,
+          166
+        ],
+        "post": [
+          165,
+          165,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32065,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          166
+        ],
+        "post": [
+          167,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32066,
+        "family": "negative",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32067,
+        "family": "negative",
+        "first": [
+          164,
+          164,
+          165
+        ],
+        "post": [
+          164,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32068,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32069,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32070,
+        "family": "negative",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32071,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32072,
+        "family": "negative",
+        "first": [
+          164,
+          164,
+          164
+        ],
+        "post": [
+          164,
+          164,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32073,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          166
+        ],
+        "post": [
+          166,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32074,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          165
+        ],
+        "post": [
+          166,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32075,
+        "family": "negative",
+        "first": [
+          169,
+          166,
+          167
+        ],
+        "post": [
+          169,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32076,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32077,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          167
+        ],
+        "post": [
+          167,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32078,
+        "family": "negative",
+        "first": [
+          168,
+          165,
+          168
+        ],
+        "post": [
+          168,
+          165,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32079,
+        "family": "negative",
+        "first": [
+          166,
+          166,
+          167
+        ],
+        "post": [
+          166,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32080,
+        "family": "negative",
+        "first": [
+          164,
+          162,
+          165
+        ],
+        "post": [
+          164,
+          162,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32081,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32082,
+        "family": "negative",
+        "first": [
+          169,
+          165,
+          167
+        ],
+        "post": [
+          169,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32083,
+        "family": "negative",
+        "first": [
+          168,
+          165,
+          168
+        ],
+        "post": [
+          168,
+          165,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32084,
+        "family": "negative",
+        "first": [
+          163,
+          163,
+          163
+        ],
+        "post": [
+          163,
+          163,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32085,
+        "family": "negative",
+        "first": [
+          167,
+          166,
+          167
+        ],
+        "post": [
+          167,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32086,
+        "family": "negative",
+        "first": [
+          168,
+          165,
+          167
+        ],
+        "post": [
+          168,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32087,
+        "family": "negative",
+        "first": [
+          165,
+          164,
+          166
+        ],
+        "post": [
+          165,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32088,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32089,
+        "family": "negative",
+        "first": [
+          170,
+          167,
+          168
+        ],
+        "post": [
+          170,
+          167,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32090,
+        "family": "negative",
+        "first": [
+          168,
+          163,
+          166
+        ],
+        "post": [
+          168,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32091,
+        "family": "negative",
+        "first": [
+          166,
+          164,
+          167
+        ],
+        "post": [
+          166,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32092,
+        "family": "negative",
+        "first": [
+          170,
+          166,
+          168
+        ],
+        "post": [
+          170,
+          166,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32093,
+        "family": "negative",
+        "first": [
+          167,
+          166,
+          167
+        ],
+        "post": [
+          167,
+          166,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32094,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          167
+        ],
+        "post": [
+          167,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32095,
+        "family": "negative",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32096,
+        "family": "negative",
+        "first": [
+          163,
+          165,
+          164
+        ],
+        "post": [
+          163,
+          165,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32097,
+        "family": "negative",
+        "first": [
+          167,
+          165,
+          168
+        ],
+        "post": [
+          167,
+          165,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32098,
+        "family": "negative",
+        "first": [
+          166,
+          163,
+          165
+        ],
+        "post": [
+          166,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 32099,
+        "family": "negative",
+        "first": [
+          165,
+          163,
+          165
+        ],
+        "post": [
+          165,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33000,
+        "family": "variance",
+        "first": [
+          171,
+          162,
+          165
+        ],
+        "post": [
+          171,
+          162,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33001,
+        "family": "variance",
+        "first": [
+          193,
+          163,
+          164
+        ],
+        "post": [
+          193,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33002,
+        "family": "variance",
+        "first": [
+          173,
+          164,
+          173
+        ],
+        "post": [
+          173,
+          164,
+          173
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33003,
+        "family": "variance",
+        "first": [
+          179,
+          164,
+          170
+        ],
+        "post": [
+          179,
+          164,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33004,
+        "family": "variance",
+        "first": [
+          177,
+          166,
+          171
+        ],
+        "post": [
+          177,
+          166,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33005,
+        "family": "variance",
+        "first": [
+          172,
+          162,
+          170
+        ],
+        "post": [
+          172,
+          162,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33006,
+        "family": "variance",
+        "first": [
+          163,
+          165,
+          174
+        ],
+        "post": [
+          163,
+          165,
+          174
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33007,
+        "family": "variance",
+        "first": [
+          189,
+          164,
+          177
+        ],
+        "post": [
+          189,
+          164,
+          177
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33008,
+        "family": "variance",
+        "first": [
+          182,
+          163,
+          182
+        ],
+        "post": [
+          182,
+          163,
+          182
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33009,
+        "family": "variance",
+        "first": [
+          42,
+          164,
+          55
+        ],
+        "post": [
+          166,
+          164,
+          178
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33010,
+        "family": "variance",
+        "first": [
+          168,
+          162,
+          168
+        ],
+        "post": [
+          168,
+          162,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33011,
+        "family": "variance",
+        "first": [
+          171,
+          163,
+          134
+        ],
+        "post": [
+          171,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33012,
+        "family": "variance",
+        "first": [
+          230,
+          163,
+          186
+        ],
+        "post": [
+          230,
+          163,
+          186
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33013,
+        "family": "variance",
+        "first": [
+          164,
+          163,
+          164
+        ],
+        "post": [
+          164,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33014,
+        "family": "variance",
+        "first": [
+          167,
+          162,
+          167
+        ],
+        "post": [
+          167,
+          162,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33015,
+        "family": "variance",
+        "first": [
+          171,
+          164,
+          171
+        ],
+        "post": [
+          171,
+          164,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33016,
+        "family": "variance",
+        "first": [
+          137,
+          162,
+          136
+        ],
+        "post": [
+          186,
+          162,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33017,
+        "family": "variance",
+        "first": [
+          165,
+          165,
+          165
+        ],
+        "post": [
+          165,
+          165,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33018,
+        "family": "variance",
+        "first": [
+          184,
+          162,
+          170
+        ],
+        "post": [
+          184,
+          162,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33019,
+        "family": "variance",
+        "first": [
+          169,
+          163,
+          167
+        ],
+        "post": [
+          169,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33020,
+        "family": "variance",
+        "first": [
+          172,
+          162,
+          171
+        ],
+        "post": [
+          172,
+          162,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33021,
+        "family": "variance",
+        "first": [
+          168,
+          162,
+          168
+        ],
+        "post": [
+          168,
+          162,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33022,
+        "family": "variance",
+        "first": [
+          164,
+          163,
+          164
+        ],
+        "post": [
+          164,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33023,
+        "family": "variance",
+        "first": [
+          178,
+          165,
+          177
+        ],
+        "post": [
+          178,
+          165,
+          177
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33024,
+        "family": "variance",
+        "first": [
+          167,
+          163,
+          166
+        ],
+        "post": [
+          167,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33025,
+        "family": "variance",
+        "first": [
+          162,
+          165,
+          169
+        ],
+        "post": [
+          162,
+          165,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33026,
+        "family": "variance",
+        "first": [
+          170,
+          162,
+          163
+        ],
+        "post": [
+          170,
+          162,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33027,
+        "family": "variance",
+        "first": [
+          180,
+          163,
+          171
+        ],
+        "post": [
+          180,
+          163,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33028,
+        "family": "variance",
+        "first": [
+          170,
+          163,
+          170
+        ],
+        "post": [
+          170,
+          163,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33029,
+        "family": "variance",
+        "first": [
+          215,
+          163,
+          96
+        ],
+        "post": [
+          215,
+          163,
+          173
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33030,
+        "family": "variance",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33031,
+        "family": "variance",
+        "first": [
+          170,
+          162,
+          170
+        ],
+        "post": [
+          170,
+          162,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33032,
+        "family": "variance",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33033,
+        "family": "variance",
+        "first": [
+          170,
+          164,
+          170
+        ],
+        "post": [
+          170,
+          164,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33034,
+        "family": "variance",
+        "first": [
+          190,
+          162,
+          189
+        ],
+        "post": [
+          190,
+          162,
+          189
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33035,
+        "family": "variance",
+        "first": [
+          164,
+          164,
+          165
+        ],
+        "post": [
+          164,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33036,
+        "family": "variance",
+        "first": [
+          171,
+          162,
+          170
+        ],
+        "post": [
+          171,
+          162,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33037,
+        "family": "variance",
+        "first": [
+          215,
+          163,
+          187
+        ],
+        "post": [
+          215,
+          163,
+          187
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33038,
+        "family": "variance",
+        "first": [
+          176,
+          163,
+          172
+        ],
+        "post": [
+          176,
+          163,
+          172
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33039,
+        "family": "variance",
+        "first": [
+          194,
+          165,
+          167
+        ],
+        "post": [
+          194,
+          165,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33040,
+        "family": "variance",
+        "first": [
+          164,
+          163,
+          164
+        ],
+        "post": [
+          164,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33041,
+        "family": "variance",
+        "first": [
+          179,
+          165,
+          178
+        ],
+        "post": [
+          179,
+          165,
+          178
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33042,
+        "family": "variance",
+        "first": [
+          174,
+          163,
+          169
+        ],
+        "post": [
+          174,
+          163,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33043,
+        "family": "variance",
+        "first": [
+          170,
+          163,
+          170
+        ],
+        "post": [
+          170,
+          163,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33044,
+        "family": "variance",
+        "first": [
+          170,
+          167,
+          169
+        ],
+        "post": [
+          170,
+          167,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33045,
+        "family": "variance",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33046,
+        "family": "variance",
+        "first": [
+          170,
+          162,
+          168
+        ],
+        "post": [
+          170,
+          162,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33047,
+        "family": "variance",
+        "first": [
+          185,
+          163,
+          184
+        ],
+        "post": [
+          185,
+          163,
+          184
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33048,
+        "family": "variance",
+        "first": [
+          181,
+          163,
+          181
+        ],
+        "post": [
+          181,
+          163,
+          181
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33049,
+        "family": "variance",
+        "first": [
+          176,
+          163,
+          175
+        ],
+        "post": [
+          176,
+          163,
+          175
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33050,
+        "family": "variance",
+        "first": [
+          169,
+          162,
+          168
+        ],
+        "post": [
+          169,
+          162,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33051,
+        "family": "variance",
+        "first": [
+          169,
+          164,
+          169
+        ],
+        "post": [
+          169,
+          164,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33052,
+        "family": "variance",
+        "first": [
+          164,
+          163,
+          163
+        ],
+        "post": [
+          164,
+          163,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33053,
+        "family": "variance",
+        "first": [
+          187,
+          163,
+          179
+        ],
+        "post": [
+          187,
+          163,
+          179
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33054,
+        "family": "variance",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33055,
+        "family": "variance",
+        "first": [
+          170,
+          163,
+          169
+        ],
+        "post": [
+          170,
+          163,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33056,
+        "family": "variance",
+        "first": [
+          174,
+          164,
+          170
+        ],
+        "post": [
+          174,
+          164,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33057,
+        "family": "variance",
+        "first": [
+          187,
+          163,
+          167
+        ],
+        "post": [
+          187,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33058,
+        "family": "variance",
+        "first": [
+          163,
+          162,
+          163
+        ],
+        "post": [
+          163,
+          162,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33059,
+        "family": "variance",
+        "first": [
+          165,
+          164,
+          167
+        ],
+        "post": [
+          165,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33060,
+        "family": "variance",
+        "first": [
+          188,
+          162,
+          171
+        ],
+        "post": [
+          188,
+          162,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33061,
+        "family": "variance",
+        "first": [
+          168,
+          163,
+          165
+        ],
+        "post": [
+          168,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33062,
+        "family": "variance",
+        "first": [
+          190,
+          164,
+          185
+        ],
+        "post": [
+          190,
+          164,
+          185
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33063,
+        "family": "variance",
+        "first": [
+          208,
+          163,
+          170
+        ],
+        "post": [
+          208,
+          163,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33064,
+        "family": "variance",
+        "first": [
+          164,
+          162,
+          164
+        ],
+        "post": [
+          164,
+          162,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33065,
+        "family": "variance",
+        "first": [
+          181,
+          163,
+          180
+        ],
+        "post": [
+          181,
+          163,
+          180
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33066,
+        "family": "variance",
+        "first": [
+          178,
+          163,
+          164
+        ],
+        "post": [
+          178,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33067,
+        "family": "variance",
+        "first": [
+          166,
+          165,
+          168
+        ],
+        "post": [
+          166,
+          165,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33068,
+        "family": "variance",
+        "first": [
+          168,
+          162,
+          168
+        ],
+        "post": [
+          168,
+          162,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33069,
+        "family": "variance",
+        "first": [
+          78,
+          162,
+          78
+        ],
+        "post": [
+          163,
+          162,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33070,
+        "family": "variance",
+        "first": [
+          163,
+          163,
+          163
+        ],
+        "post": [
+          163,
+          163,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33071,
+        "family": "variance",
+        "first": [
+          168,
+          164,
+          168
+        ],
+        "post": [
+          168,
+          164,
+          168
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33072,
+        "family": "variance",
+        "first": [
+          165,
+          164,
+          165
+        ],
+        "post": [
+          165,
+          164,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33073,
+        "family": "variance",
+        "first": [
+          184,
+          162,
+          180
+        ],
+        "post": [
+          184,
+          162,
+          180
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33074,
+        "family": "variance",
+        "first": [
+          167,
+          163,
+          165
+        ],
+        "post": [
+          167,
+          163,
+          165
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33075,
+        "family": "variance",
+        "first": [
+          169,
+          166,
+          173
+        ],
+        "post": [
+          169,
+          166,
+          173
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33076,
+        "family": "variance",
+        "first": [
+          163,
+          162,
+          163
+        ],
+        "post": [
+          163,
+          162,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33077,
+        "family": "variance",
+        "first": [
+          164,
+          163,
+          164
+        ],
+        "post": [
+          164,
+          163,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33078,
+        "family": "variance",
+        "first": [
+          171,
+          163,
+          171
+        ],
+        "post": [
+          171,
+          163,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33079,
+        "family": "variance",
+        "first": [
+          177,
+          163,
+          177
+        ],
+        "post": [
+          177,
+          163,
+          177
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33080,
+        "family": "variance",
+        "first": [
+          208,
+          162,
+          167
+        ],
+        "post": [
+          208,
+          162,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33081,
+        "family": "variance",
+        "first": [
+          164,
+          162,
+          164
+        ],
+        "post": [
+          164,
+          162,
+          164
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33082,
+        "family": "variance",
+        "first": [
+          163,
+          162,
+          163
+        ],
+        "post": [
+          163,
+          162,
+          163
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33083,
+        "family": "variance",
+        "first": [
+          180,
+          163,
+          171
+        ],
+        "post": [
+          180,
+          163,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33084,
+        "family": "variance",
+        "first": [
+          175,
+          162,
+          174
+        ],
+        "post": [
+          175,
+          162,
+          174
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33085,
+        "family": "variance",
+        "first": [
+          198,
+          163,
+          167
+        ],
+        "post": [
+          198,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33086,
+        "family": "variance",
+        "first": [
+          167,
+          164,
+          167
+        ],
+        "post": [
+          167,
+          164,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33087,
+        "family": "variance",
+        "first": [
+          176,
+          164,
+          175
+        ],
+        "post": [
+          176,
+          164,
+          175
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33088,
+        "family": "variance",
+        "first": [
+          178,
+          166,
+          171
+        ],
+        "post": [
+          178,
+          166,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33089,
+        "family": "variance",
+        "first": [
+          166,
+          163,
+          166
+        ],
+        "post": [
+          166,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33090,
+        "family": "variance",
+        "first": [
+          184,
+          165,
+          184
+        ],
+        "post": [
+          184,
+          165,
+          184
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33091,
+        "family": "variance",
+        "first": [
+          178,
+          163,
+          167
+        ],
+        "post": [
+          178,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33092,
+        "family": "variance",
+        "first": [
+          178,
+          162,
+          170
+        ],
+        "post": [
+          178,
+          162,
+          170
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33093,
+        "family": "variance",
+        "first": [
+          169,
+          164,
+          169
+        ],
+        "post": [
+          169,
+          164,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33094,
+        "family": "variance",
+        "first": [
+          34,
+          162,
+          42
+        ],
+        "post": [
+          196,
+          162,
+          179
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33095,
+        "family": "variance",
+        "first": [
+          169,
+          166,
+          169
+        ],
+        "post": [
+          169,
+          166,
+          169
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33096,
+        "family": "variance",
+        "first": [
+          214,
+          163,
+          167
+        ],
+        "post": [
+          214,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33097,
+        "family": "variance",
+        "first": [
+          167,
+          163,
+          167
+        ],
+        "post": [
+          167,
+          163,
+          167
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33098,
+        "family": "variance",
+        "first": [
+          167,
+          163,
+          166
+        ],
+        "post": [
+          167,
+          163,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 33099,
+        "family": "variance",
+        "first": [
+          185,
+          163,
+          171
+        ],
+        "post": [
+          185,
+          163,
+          171
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34000,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34001,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34002,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34003,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34004,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34005,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          280
+        ],
+        "post": [
+          null,
+          165,
+          280
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34006,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34007,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34008,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34009,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34010,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34011,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34012,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34013,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34014,
+        "family": "oscillation",
+        "first": [
+          null,
+          152,
+          203
+        ],
+        "post": [
+          null,
+          163,
+          203
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34015,
+        "family": "oscillation",
+        "first": [
+          298,
+          163,
+          298
+        ],
+        "post": [
+          298,
+          163,
+          298
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34016,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34017,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          99
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34018,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34019,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34020,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34021,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34022,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34023,
+        "family": "oscillation",
+        "first": [
+          340,
+          165,
+          329
+        ],
+        "post": [
+          340,
+          165,
+          329
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34024,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34025,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34026,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34027,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34028,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34029,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34030,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34031,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34032,
+        "family": "oscillation",
+        "first": [
+          null,
+          157,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34033,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34034,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34035,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34036,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34037,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34038,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34039,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          213
+        ],
+        "post": [
+          null,
+          163,
+          213
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34040,
+        "family": "oscillation",
+        "first": [
+          null,
+          84,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34041,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34042,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34043,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34044,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34045,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34046,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34047,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34048,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34049,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34050,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34051,
+        "family": "oscillation",
+        "first": [
+          331,
+          165,
+          330
+        ],
+        "post": [
+          331,
+          165,
+          330
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34052,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34053,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34054,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34055,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34056,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34057,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34058,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34059,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34060,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34061,
+        "family": "oscillation",
+        "first": [
+          68,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34062,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34063,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34064,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34065,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34066,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34067,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34068,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34069,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34070,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34071,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34072,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34073,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34074,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34075,
+        "family": "oscillation",
+        "first": [
+          null,
+          164,
+          134
+        ],
+        "post": [
+          null,
+          164,
+          166
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34076,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34077,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          319
+        ],
+        "post": [
+          null,
+          163,
+          319
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34078,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34079,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34080,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34081,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34082,
+        "family": "oscillation",
+        "first": [
+          313,
+          165,
+          313
+        ],
+        "post": [
+          313,
+          165,
+          313
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34083,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34084,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34085,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34086,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34087,
+        "family": "oscillation",
+        "first": [
+          25,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34088,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          197
+        ],
+        "post": [
+          null,
+          165,
+          197
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34089,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34090,
+        "family": "oscillation",
+        "first": [
+          211,
+          165,
+          211
+        ],
+        "post": [
+          211,
+          165,
+          211
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34091,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34092,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34093,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34094,
+        "family": "oscillation",
+        "first": [
+          null,
+          163,
+          null
+        ],
+        "post": [
+          null,
+          163,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34095,
+        "family": "oscillation",
+        "first": [
+          null,
+          167,
+          null
+        ],
+        "post": [
+          null,
+          167,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34096,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34097,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34098,
+        "family": "oscillation",
+        "first": [
+          null,
+          164,
+          null
+        ],
+        "post": [
+          null,
+          164,
+          null
+        ],
+        "matchedSignedIdentical": true
+      },
+      {
+        "seed": 34099,
+        "family": "oscillation",
+        "first": [
+          null,
+          165,
+          null
+        ],
+        "post": [
+          null,
+          165,
+          null
+        ],
+        "matchedSignedIdentical": true
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "seed": 101,
+      "preset": "flat",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 41,
+      "distance_m": 120.656,
+      "collisions": 0,
+      "energy_Wh": 0.4778,
+      "straightLineEfficiency": 0.9713088764195857,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 203,
+      "preset": "flat",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 38.8,
+      "distance_m": 116.825,
+      "collisions": 0,
+      "energy_Wh": 0.4411,
+      "straightLineEfficiency": 1,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 307,
+      "preset": "flat",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 38.8,
+      "distance_m": 116.825,
+      "collisions": 0,
+      "energy_Wh": 0.4411,
+      "straightLineEfficiency": 1,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 409,
+      "preset": "flat",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 41.35,
+      "distance_m": 120.923,
+      "collisions": 0,
+      "energy_Wh": 0.4787,
+      "straightLineEfficiency": 0.969161209893254,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 503,
+      "preset": "flat",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 45.95,
+      "distance_m": 134.948,
+      "collisions": 0,
+      "energy_Wh": 0.5286,
+      "straightLineEfficiency": 0.8684389278231472,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 607,
+      "preset": "flat",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 42.45,
+      "distance_m": 124.47,
+      "collisions": 0,
+      "energy_Wh": 0.4915,
+      "straightLineEfficiency": 0.9415426353023972,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 101,
+      "preset": "highlands",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 53.2,
+      "distance_m": 145.399,
+      "collisions": 0,
+      "energy_Wh": 0.6072,
+      "straightLineEfficiency": 0.8060189039823685,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 203,
+      "preset": "highlands",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 40.3,
+      "distance_m": 118.36,
+      "collisions": 0,
+      "energy_Wh": 0.4493,
+      "straightLineEfficiency": 0.9901518090867142,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 307,
+      "preset": "highlands",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 41.2,
+      "distance_m": 120.008,
+      "collisions": 0,
+      "energy_Wh": 0.4638,
+      "straightLineEfficiency": 0.976552278729261,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 409,
+      "preset": "highlands",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 49.25,
+      "distance_m": 142.032,
+      "collisions": 0,
+      "energy_Wh": 0.5457,
+      "straightLineEfficiency": 0.8251267674114526,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 503,
+      "preset": "highlands",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 50.5,
+      "distance_m": 143.708,
+      "collisions": 0,
+      "energy_Wh": 0.575,
+      "straightLineEfficiency": 0.8155004561090508,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 607,
+      "preset": "highlands",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 45.1,
+      "distance_m": 129.229,
+      "collisions": 0,
+      "energy_Wh": 0.5095,
+      "straightLineEfficiency": 0.90687125033599,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 101,
+      "preset": "ridge",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 54.1,
+      "distance_m": 147.991,
+      "collisions": 0,
+      "energy_Wh": 0.6094,
+      "straightLineEfficiency": 0.791898970467893,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 203,
+      "preset": "ridge",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 40.65,
+      "distance_m": 119.353,
+      "collisions": 0,
+      "energy_Wh": 0.4448,
+      "straightLineEfficiency": 0.981912280807573,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 307,
+      "preset": "ridge",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 41.9,
+      "distance_m": 121.91,
+      "collisions": 0,
+      "energy_Wh": 0.4649,
+      "straightLineEfficiency": 0.9613179397890755,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 409,
+      "preset": "ridge",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 50.55,
+      "distance_m": 146.04,
+      "collisions": 0,
+      "energy_Wh": 0.5503,
+      "straightLineEfficiency": 0.8024782430163494,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 503,
+      "preset": "ridge",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 55.15,
+      "distance_m": 152.897,
+      "collisions": 0,
+      "energy_Wh": 0.6243,
+      "straightLineEfficiency": 0.7664924081391858,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    },
+    {
+      "seed": 607,
+      "preset": "ridge",
+      "complete": true,
+      "goals": 3,
+      "totalGoals": 3,
+      "time_s": 46,
+      "distance_m": 131.645,
+      "collisions": 0,
+      "energy_Wh": 0.5151,
+      "straightLineEfficiency": 0.8902302096096267,
+      "finalState": "DISARMED",
+      "reason": "Mission complete"
+    }
+  ]
+}

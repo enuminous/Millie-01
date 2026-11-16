@@ -16,3 +16,7 @@ jobs:
         run: |
           python -m millie01 demo --scenario clear --steps 20 > /dev/null
           python -m millie01 matrix --steps 20 --out /tmp/millie01-matrix.json
+      - name: Browser simulation unit tests
+        run: node --test tests/web_sim.test.mjs
+      - name: Browser benchmark reproduction
+        run: node benchmarks/run_web.mjs /tmp/millie01-web-benchmark.json

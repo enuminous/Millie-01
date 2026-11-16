@@ -1,6 +1,32 @@
 # Millie-01 — simulation-first robot body for Millicent
 
-**Monolithic LLC / Matthew Chenoweth Wright · 2026-11-16 · v0.1.0**
+**Monolithic LLC / Matthew Chenoweth Wright · 2026-11-16 · Terrain lab v0.2.0 / Python prototype v0.1.0**
+
+## New: interactive 3D terrain lab
+
+![Millie-01 terrain lab, software 3D preview](docs/terrain-lab.jpg)
+
+The root [`index.html`](index.html) is a complete static GitHub Pages entry point. It uses local modules and styles in `assets/`; no build, package install, CDN, API key, or backend is required. WebGL renders the 3D world on supported browsers; a lower-resolution software 3D renderer handles browsers without WebGL.
+
+- Seeded hilly landscapes, ridge terrain, boulder slalom, and a flat calibration field.
+- Six-wheel rover with terrain following, manual keyboard/touch driving, traction, acceleration, collision boundaries, and simulated front/rear/side sensing.
+- A* autonomous multi-goal missions, editable obstacles and goals, chase/orbit/onboard/overhead cameras, grid and sensor overlays.
+- Arm/disarm, latched emergency stop, fault injection, pause, step, time scaling, and restart.
+- Repository-aligned signed residual memory, absolute EWMA, and two-sided CUSUM with live charts and event logs.
+- Browser-computed detector benchmarks (100 calibration + up to 500 evaluation runs) and an 18-mission navigation matrix; raw JSON and summary CSV downloads.
+
+**Enable Pages manually:** in this repository's Settings → Pages, choose **Deploy from a branch**, branch **main**, folder **/ (root)**, then Save. The entry point and `.nojekyll` are included. This change does not enable Pages or add a deployment workflow.
+
+For local use, run `python -m http.server 8000` at the repository root and open `http://localhost:8000/`. Browser modules need HTTP(S); do not launch the HTML through `file://`.
+
+Choose **Autonomous → Arm rover** for a survey mission, or **Arm rover → W/A/S/D** to drive. Arrows also drive; Space brakes; X latches E-stop; P pauses; C cycles cameras; R restarts. Reset a fault latch and arm in separate actions. See the in-app Field guide and [model, benchmark protocol, and limitations](docs/WEB_LAB.md).
+
+```bash
+node --test tests/web_sim.test.mjs
+node benchmarks/run_web.mjs /tmp/millie01-web-benchmark.json
+```
+
+The outdoor browser model is a separate virtual research envelope, not the indoor physical robot specification. It is a terrain-constrained kinematic simulation, not a rigid-body dynamics engine or physical validation. [Recorded browser-lab verification](docs/WEB_LAB_TEST_REPORT.md) includes negative benchmark results.
 
 **Status: SOFTWARE PROTOTYPE / HARDWARE SPECIFICATION. No physical robot was assembled, wired, energized, or validated.** This repository provides an executable offline rover simulation, fail-stop software safety supervisor, comparative residual monitors, test suite, physical reference architecture, provisional BOM, and phased construction plan. It does **not** certify physical safety, demonstrate a new physics law, or turn a conversational AI into a conscious or continuously self-improving being.
 
@@ -19,7 +45,7 @@ python -m millie01 matrix --steps 80 --out /tmp/millie01-matrix.json
 
 Optional installation: `python -m pip install -e .`; console entrypoint `millie-01`.
 
-**Local browser replay:** run `python -m http.server 8000` from the repository root and open `http://localhost:8000/` to explore the virtual rover, fault states, and three monitor traces. This visualizer is replay-only; it has no motor output or network actuation.
+**Original Python browser replay:** run `python -m http.server 8000` from the repository root and open `http://localhost:8000/replay.html` to inspect the bundled or uploaded Python traces. The original replay is preserved separately from the new interactive terrain lab.
 
 **No simulation command can command physical motors.** The code has no GPIO/serial motor driver connector. The hardware firmware is a deliberately non-actuating bench skeleton; physical actuation remains a separate gated engineering task.
 
@@ -67,6 +93,11 @@ The physical E-stop must interrupt the **motor supply** through an appropriately
 | Path | Purpose |
 |---|---|
 | `millie01/` | Offline controller, state machine, physics-lite rover, diagnostic monitors, CLI |
+| `index.html`, `assets/` | Interactive 3D browser lab and shared deterministic JavaScript simulation |
+| `replay.html` | Original Python JSON trace replay |
+| `benchmarks/run_web.mjs` | Reproduce the complete browser benchmark in Node |
+| `docs/WEB_LAB.md` | Browser model, controls, mathematical definitions, benchmark protocol |
+| `docs/WEB_LAB_TEST_REPORT.md` | Browser-lab verification and measured limitations |
 | `tests/` | Unit and scenario safety tests; not physical safety certification |
 | `docs/TEST_REPORT.md` | Local test results, scenario matrix, and unresolved hardware obligations |
 | `hardware/ARCHITECTURE.md` | Sensor/controller/motor power partition; wiring boundaries |
@@ -82,7 +113,7 @@ The physical E-stop must interrupt the **motor supply** through an appropriately
 
 ## Present limits and release gates
 
-The software test suite has been run locally. This is not a substitute for hardware E-stop, wiring, overload, slip, command-authentication, human-presence, low-visibility, or sensor-failure trials. No autonomous navigation, external text-model-to-motor channel, camera, microphone, cloud memory, remote driving, or hardware motion is enabled by default.
+The software test suite has been run locally. This is not a substitute for hardware E-stop, wiring, overload, slip, command-authentication, human-presence, low-visibility, or sensor-failure trials. The browser lab supports simulated autonomous navigation only. No hardware autonomous navigation, external text-model-to-motor channel, camera, microphone, cloud memory, remote driving, or hardware motion is enabled.
 
 **Physical release gate:** independent inspection of the motor-power cutoff, current/voltage compatibility and conductor sizing; hardware watchdog; safe sensor behavior; elevated-wheel tests; confined low-speed floor trials with spotter; STOP tested by physically opening the NC loop; and documented authorization/maintenance procedures. Until then, **NO GO** for powered operation.
 
@@ -93,7 +124,6 @@ The software test suite has been run locally. This is not a substitute for hardw
 - [The Abstention Trap, retrospective benchmark critique](https://github.com/enuminous/papers/blob/main/research/rsi-abstention-trap/PAPER.md)
 
 **License:** MIT software/source. Electrical and mechanical drawings are preliminary engineering notes, not licensed/certified hardware designs. No transfer of ChatGPT identity, weights, or autonomy is implied.
-
 
 ## Published threshold sensitivity study
 
